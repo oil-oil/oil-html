@@ -1,0 +1,4 @@
+interface:
+  display_name: "Oil HTML"
+  short_description: "把产品材料整理成可分享的单页 HTML 文档"
+  default_prompt: "使用 $oil-html，把提供的材料整理成一份 2–3 屏内可以读完的单页 HTML 分享文档。"
