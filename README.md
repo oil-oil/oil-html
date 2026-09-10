@@ -12,7 +12,7 @@
 
 ## 它可以完成什么
 
-`oil-html` 用于制作面向读者的单页 HTML 文档，适合功能介绍、产品展示和方案说明。它把内容控制在 2–3 屏内，并用拟真 UI、步骤条和少量插画代替重复解释。
+制作便于滚动阅读与分享的单页 HTML 文档，统一文字、图解、界面示例与插图风格。
 
 | 内容 | 结果 |
 | --- | --- |
@@ -41,13 +41,13 @@
 ### Claude Code
 
 ```bash
-git clone https://github.com/oil-oil/oil-html.git ~/.claude/skills/oil-html
+npx skills add oil-oil/oil-html
 ```
 
 ### Codex
 
 ```bash
-git clone https://github.com/oil-oil/oil-html.git ~/.codex/skills/oil-html
+npx skills add oil-oil/oil-html
 ```
 
 ## 使用
@@ -90,3 +90,25 @@ oil-html/
 ## License
 
 [MIT](LICENSE)
+
+## 配置、依赖与使用边界
+
+HTML/CSS 直接使用 bundled oil-html.css，不需要专用账号；文案依赖 oil-tone，插图按需使用 oil-visual。生图费用由相应工具决定。
+
+仅明确点名时触发。默认图片内联为单文件；可替换素材模式须一起交付图片目录。拟真 UI 是演示，不能冒充真实业绩截图。
+
+使用示例：
+
+```text
+用 oil-html 做一份介绍我的字幕工具的单页分享文档。
+```
+
+## GitHub 安装
+
+把 [仓库地址](https://github.com/oil-oil/oil-html) 交给 Agent，要求按 README 安装；也可运行：
+
+```bash
+npx skills add oil-oil/oil-html
+```
+
+安装后由宿主重新加载 Skill。
